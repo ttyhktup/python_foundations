@@ -140,7 +140,7 @@ Here are some instructions:
 >>>  report_weather(1, as_snow_lover)
 'not great'
 >>>  report_weather(0, as_snow_lover)
-'not great'
+'great'
 ```
 
 ## Looking Ahead
