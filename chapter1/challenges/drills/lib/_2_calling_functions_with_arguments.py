@@ -15,9 +15,10 @@
 #   Call:    starts_with_the_letter_a("Rock")
 #   Returns: False
 def starts_with_the_letter_a(string):
-    # your code goes here (delete the pass below)
-    pass
-
+    if string.lower()[0] == "a":
+        return True
+    else:
+        return False
 
 # Purpose: checks if a string ends with the letter a
 # Example:
@@ -28,8 +29,10 @@ def starts_with_the_letter_a(string):
 #   Call:    ends_with_the_letter_a("Python")
 #   Returns: False
 def ends_with_the_letter_a(string):
-    # your code goes here (delete the pass below)
-    pass
+    if string[-1].lower() == "a":
+        return True
+    else:
+        return False
 
 
 # Purpose: checks if a string contains the word hello
@@ -41,8 +44,11 @@ def ends_with_the_letter_a(string):
 #   Call:    contains_hello("world")
 #   Returns: False
 def contains_hello(string):
-    # your code goes here (delete the pass below)
-    pass
+    if "hello" in string.lower():
+        return True
+    else:
+        return False
+    
 
 
 # Purpose: replaces the word hello with the word goodbye
@@ -54,8 +60,9 @@ def contains_hello(string):
 #   Call:    substitute_hello_with_goodbye("Hello folks")
 #   Returns: "Hello folks"
 def substitute_hello_with_goodbye(string):
+    return string.replace("hello", "goodbye")
     # your code goes here (delete the pass below)
-    pass
+    
 
 
 # Purpose: removes the letter x from a string
@@ -66,7 +73,8 @@ def substitute_hello_with_goodbye(string):
 #   Returns: "OO"
 def remove_x(string):
     # your code goes here (delete the pass below)
-    pass
+    return string.replace("X", "").replace("x", "")
+
 
 
 # Purpose: returns the first half of a string
@@ -75,7 +83,7 @@ def remove_x(string):
 #   Returns: "cod"
 # Note: you can assume the string will always have an even number of characters
 def first_half(string):
-    # your code goes here (delete the pass below)
+    return string[:len(string) // 2]
     pass
 
 
@@ -85,7 +93,7 @@ def first_half(string):
 #   Returns: "ing"
 # Note: you can assume the string will always have an even number of characters
 def second_half(string):
-    # your code goes here (delete the pass below)
+    return string[len(string) // 2:]
     pass
 
 
